@@ -1,0 +1,21 @@
+nav.navigation {
+  & ul {
+    list-style: none;
+    display: flex;
+    padding-right: 5rem;
+    & li:not(:last-child) {
+      & a {
+        margin: 0 2rem 0 0;
+      }
+    }
+    & li a {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover,
+      &.active {
+        color: yellowgreen;
+      }
+    }
+  }
+}
